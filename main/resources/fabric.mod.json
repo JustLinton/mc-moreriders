@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "moreriders",
+  "version": "${version}",
+  "name": "MoreRiders",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/jiangjm/moreriders"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/moreriders/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "linton.moreriders.client.MoreRidersClient"
+    ],
+    "main": [
+      "linton.moreriders.MoreRiders"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
