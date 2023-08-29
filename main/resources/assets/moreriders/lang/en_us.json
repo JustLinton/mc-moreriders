@@ -10,5 +10,8 @@
   "item.moreriders.flower_on_a_stick": "虞美人钓竿",
   "item.moreriders.flower_on_a_stick_with_fw": "虞美人烟花火箭钓竿",
   "item.moreriders.init_with_fw": "胡萝卜烟花火箭钓竿",
-  "moreriders.group1": "更多骑乘"
+  "moreriders.group1": "更多骑乘",
+  "key.moreriders.riding_jump": "骑乘跳跃或飞行",
+  "key.moreriders.riding_down_fly": "骑乘飞行下降",
+  "key.category.moreriders.categoryone": "更多骑乘"
 }

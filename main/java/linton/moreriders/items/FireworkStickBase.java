@@ -42,15 +42,14 @@ public class FireworkStickBase extends Item {
             if(!user.isCreative()){
                 itemStack.setDamage(itemStack.getDamage() + 1);
             }
-        }
 
-
-        //add firework
-        if(!world.isClient){
-            FireworkRocketEntity fireworkRocketEntity = new FireworkRocketEntity(world,itemStack,user);
-            world.spawnEntity(fireworkRocketEntity);
-            world.spawnEntity(fireworkRocketEntity);
-            world.spawnEntity(fireworkRocketEntity);
+            //add firework
+            if(!world.isClient){
+                FireworkRocketEntity fireworkRocketEntity = new FireworkRocketEntity(world,itemStack,user);
+                world.spawnEntity(fireworkRocketEntity);
+                world.spawnEntity(fireworkRocketEntity);
+                world.spawnEntity(fireworkRocketEntity);
+            }
         }
 
         return TypedActionResult.success(user.getStackInHand(hand));
