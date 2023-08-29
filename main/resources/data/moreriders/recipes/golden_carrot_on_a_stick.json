@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W  ",
+    " R ",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:fishing_rod"
+    },
+    "R": {
+      "item": "minecraft:golden_carrot"
+    }
+  },
+  "result": {
+    "item": "moreriders:golden_carrot_on_a_stick",
+    "count": 1
+  }
+}

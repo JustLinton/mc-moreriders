@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W  ",
+    " R ",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:fishing_rod"
+    },
+    "R": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "moreriders:wheat_on_a_stick",
+    "count": 1
+  }
+}
