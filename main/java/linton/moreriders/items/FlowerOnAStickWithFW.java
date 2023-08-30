@@ -7,4 +7,8 @@ public class FlowerOnAStickWithFW extends FireworkStickBase {
         super(settings);
     }
 
+    @Override
+    public Item getDamageReplaceItem() {
+        return ModItems.FLOWER_ON_A_STICK;
+    }
 }

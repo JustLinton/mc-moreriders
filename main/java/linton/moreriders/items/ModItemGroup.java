@@ -34,6 +34,8 @@ public class ModItemGroup {
             content.add(ModItems.WHEAT_ON_A_STICK_WITH_FW);
             content.add(ModItems.FLOWER_ON_A_STICK);
             content.add(ModItems.FLOWER_ON_A_STICK_WITH_FW);
+            content.add(ModItems.SEAGRASS_ON_A_STICK);
+            content.add(ModItems.SEAGRASS_ON_A_STICK_WITH_FW);
         });
     }
 }

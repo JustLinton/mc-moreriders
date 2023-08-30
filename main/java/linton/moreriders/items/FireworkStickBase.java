@@ -7,6 +7,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FireworkRocketEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -18,10 +19,14 @@ import net.minecraft.world.World;
 
 public class FireworkStickBase extends Item {
     public FireworkStickBase(Settings settings) {
-        super(settings.maxDamage(50));
+        super(settings.maxDamage(10));
     }
 
     private final static double speedInc = 3.0;
+
+    public Item getDamageReplaceItem() {
+        return null;
+    }
 
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
@@ -41,6 +46,12 @@ public class FireworkStickBase extends Item {
             vehicle.addVelocity(Vec3d.fromPolar(user.getPitch(),user.getYaw()).multiply(speedInc));
             if(!user.isCreative()){
                 itemStack.setDamage(itemStack.getDamage() + 1);
+            }
+
+            if (itemStack.getDamage() >= itemStack.getMaxDamage() - 1) {
+                ItemStack itemStack2 = new ItemStack(getDamageReplaceItem());
+//                itemStack2.setNbt(itemStack.getNbt());
+                user.getInventory().setStack(user.getInventory().getSlotWithStack(itemStack),itemStack2);
             }
 
             //add firework

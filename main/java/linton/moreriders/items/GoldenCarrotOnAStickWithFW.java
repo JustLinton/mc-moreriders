@@ -7,4 +7,8 @@ public class GoldenCarrotOnAStickWithFW extends FireworkStickBase{
         super(settings);
     }
 
+    @Override
+    public Item getDamageReplaceItem() {
+        return ModItems.GOLDEN_CARROT_ON_A_STICK;
+    }
 }

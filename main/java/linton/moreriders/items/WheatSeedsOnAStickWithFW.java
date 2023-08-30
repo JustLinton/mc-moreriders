@@ -7,4 +7,8 @@ public class WheatSeedsOnAStickWithFW extends FireworkStickBase {
         super(settings);
     }
 
+    @Override
+    public Item getDamageReplaceItem() {
+        return ModItems.WHEAT_SEEDS_ON_A_STICK;
+    }
 }

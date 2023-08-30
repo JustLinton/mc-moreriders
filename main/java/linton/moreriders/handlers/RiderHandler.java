@@ -5,6 +5,7 @@ import linton.moreriders.items.FireworkStickBase;
 import linton.moreriders.items.StickBase;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.mob.WaterCreatureEntity;
 import net.minecraft.entity.passive.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -38,6 +39,10 @@ public class RiderHandler {
 
         if(itemClassName.contains("FlowerOnAStick")){
             return vehicle instanceof BeeEntity;
+        }
+
+        if(itemClassName.contains("SeagrassOnAStick")){
+            return vehicle instanceof WaterCreatureEntity;
         }
 
 

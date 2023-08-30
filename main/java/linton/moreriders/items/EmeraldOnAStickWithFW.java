@@ -11,4 +11,9 @@ public class EmeraldOnAStickWithFW extends FireworkStickBase {
     public EmeraldOnAStickWithFW(Settings settings) {
         super(settings);
     }
+
+    @Override
+    public Item getDamageReplaceItem() {
+        return ModItems.EMERALD_ON_A_STICK;
+    }
 }
